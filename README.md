@@ -60,3 +60,26 @@ int main(void)
    return ;
 }
 ```
+root@kali:~# gedit myc_1_1.c
+root@kali:~# gcc myc_!_!.c -o myc_!_!
+bash: !_!.c: event not found
+root@kali:~# gcc myc_1_1.c -o myc_1_1
+myc_1_1.c: In function ‘main’:
+myc_1_1.c:10:4: error: ‘rreturn’ undeclared (first use in this function)
+    rreturn ;
+    ^~~~~~~
+myc_1_1.c:10:4: note: each undeclared identifier is reported only once for each function it appears in
+root@kali:~# ^C
+root@kali:~# 
+
+root@kali:~# gcc myc_1_1.c -o myc_1_1
+myc_1_1.c: In function ‘main’:
+myc_1_1.c:10:4: warning: ‘return’ with no value, in function returning non-void
+    return ;
+    ^~~~~~
+myc_1_1.c:4:5: note: declared here
+ int main(void)
+     ^~~~
+root@kali:~# 
+
+
