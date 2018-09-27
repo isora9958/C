@@ -9,30 +9,14 @@ C語言教學手冊（四版）（附1光碟）
 出版社：旗標 
 ```
 ```
-```
- /* prog1_1, 第一個C程式碼 */ 
- 
- #include <stdio.h>
- 
- #include <stdlib.h>
- 
- int main(void)
- 
- {
- 
-    printf("Hello C!\n");   	/* 印出Hello C! 字串 */
-    
-    printf("Hello World!\n");   /* 印出Hello World! 字串 */   
-    
+/* myc_1_1, 我的第一個C程式碼 */ 
+#include <stdio.h>
+#include <stdlib.h>
+int main(void)
+{
+   printf("Hello 恩師!\n");   	/* 印出Hello 恩師! 字串 */
+   printf("Hello Taiwan!\n");   /* 印出Hello Taiwan! 字串 */   
    
- #   system("pause");
- 
-    return 0;
-    
- }
-
-```
-```
-```
-```
-```
+//  system("pause");
+   return ;
+}
