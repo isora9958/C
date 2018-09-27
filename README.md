@@ -53,11 +53,10 @@ https://zh.wikipedia.org/wiki/Stdlib.h
 #include <stdlib.h>
 int main(void)
 {
-   printf("Hello 偉大的恩師!\n");   	/* 印出Hello 偉大的恩師! 字串 */
+   printf("Hello 恩師!\n");   	/* 印出Hello 恩師! 字串 */
    printf("Hello Taiwan!\n");   /* 印出Hello Taiwan! 字串 */   
    
 //  system("pause");
    return ;
-   printf("Hello World!\n");
 }
 ```
