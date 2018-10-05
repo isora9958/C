@@ -130,7 +130,5 @@ for i in range(1,85):
             x = n * n - 100
             print(x)
             
-            
-            
-            
+      
             http://www.runoob.com/python/python-100-examples.html
