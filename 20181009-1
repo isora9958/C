@@ -1,0 +1,29 @@
+root@kali:~# ping 172.20.155.28
+PING 172.20.155.28 (172.20.155.28) 56(84) bytes of data.
+64 bytes from 172.20.155.28: icmp_seq=1 ttl=128 time=1.37 ms
+64 bytes from 172.20.155.28: icmp_seq=2 ttl=128 time=1.46 ms
+64 bytes from 172.20.155.28: icmp_seq=3 ttl=128 time=1.04 ms
+64 bytes from 172.20.155.28: icmp_seq=4 ttl=128 time=1.26 ms
+^C
+--- 172.20.155.28 ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3008ms
+rtt min/avg/max/mdev = 1.041/1.286/1.466/0.163 ms
+root@kali:~# nmap -O 172.20.155.28
+
+Starting Nmap 7.60 ( https://nmap.org ) at 2018-10-09 03:01 EDT
+Nmap scan report for 172.20.155.28
+Host is up (0.0014s latency).
+Not shown: 997 closed ports
+PORT    STATE SERVICE
+135/tcp open  msrpc
+139/tcp open  netbios-ssn
+445/tcp open  microsoft-ds
+MAC Address: 08:00:27:2B:E4:43 (Oracle VirtualBox virtual NIC)
+Device type: general purpose
+Running: Microsoft Windows XP|2003
+OS CPE: cpe:/o:microsoft:windows_xp cpe:/o:microsoft:windows_server_2003
+OS details: Microsoft Windows XP SP2 or SP3, or Windows Server 2003
+Network Distance: 1 hop
+
+OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 2.58 seconds
