@@ -1,0 +1,196 @@
+2-1
+/* prog2_1, 簡單的Ｃ語言 */
+#include <stdio.h>		/* 把stdio.h這個檔案含括進來 */
+#include <stdlib.h>		/* 把stdlib.h這個檔案含括進來 */
+int main(void)			/* 主函數main()從這兒開始 */
+{
+   int num;				/* 宣告整數變數num*/
+   num=2;		 		/* 把num的值設為2 */
+   printf("I have %c cats.\n",num); 	/* 呼叫printf()函數 */
+   printf("You have %c cats, too.\n",num); /* 呼叫printf()函數 */
+   system("pause");	/* 呼叫dos裡的pause指令，用來暫停程式的執行 */
+   return 0;
+A:變成空白
+--------------
+/* prog2_1, 簡單的Ｃ語言 */
+#include <stdio.h>		/* 把stdio.h這個檔案含括進來 */
+#include <stdlib.h>		/* 把stdlib.h這個檔案含括進來 */
+int main(void)			/* 主函數main()從這兒開始 */
+{
+   int num;				/* 宣告整數變數num*/
+   num=2;		 		/* 把num的值設為2 */
+   printf("I have %f cats.\n",num); 	/* 呼叫printf()函數 */
+   printf("You have %f cats, too.\n",num); /* 呼叫printf()函數 */
+   system("pause");	/* 呼叫dos裡的pause指令，用來暫停程式的執行 */
+   return 0;
+}
+A:變成0.000000
+--------------
+2-4
+/* prog2_4, 有錯誤的程式  */
+#include <stdio.h>   	
+#include <stdlib.h>		
+
+int main(void)
+{
+   int num;		/* 宣告整數num  /*
+   num=2;		/* 將num設值為2 /*
+   printf("I have %d dogs. \n");			/* 印出字串及變數內容  */
+   printf("You have %d dogs, too. \n>>引號); 	/* 印出字串及變數內容  */
+   system("pause")>>分號
+   return 0;
+)>>大括號
+
+--------------
+3-4
+/* prog3_4, 以ASCII碼設定字元 */
+#include <stdio.h>
+#include <stdlib.h>
+int main(void)
+{
+   char ch=90;				/* 將整數90設給字元變數ch */
+   printf("ch=%o\n",ch);		/* 印出ch的值 */
+   
+   system("pause");
+   return 0;
+}
+--------------
+/* prog3_4, 以ASCII碼設定字元 */
+#include <stdio.h>
+#include <stdlib.h>
+int main(void)
+{
+   char ch=90;				/* 將整數90設給字元變數ch */
+   printf("ch=%u\n",ch);		/* 印出ch的值 */
+   
+   system("pause");
+   return 0;
+}
+--------------
+/* prog3_4, 以ASCII碼設定字元 */
+#include <stdio.h>
+#include <stdlib.h>
+int main(void)
+{
+   char ch=90;				/* 將整數90設給字元變數ch */
+   printf("ch=%x\n",ch);		/* 印出ch的值 */
+   
+   system("pause");
+   return 0;
+}
+--------------
+/* prog3_4, 以ASCII碼設定字元 */
+#include <stdio.h>
+#include <stdlib.h>
+int main(void)
+{
+   char ch=90;				/* 將整數90設給字元變數ch */
+   printf("ch=%d\n",ch);		/* 印出ch的值 */
+   
+   system("pause");
+   return 0;
+}
+--------------
+/* prog3_4, 以ASCII碼設定字元 */
+#include <stdio.h>
+#include <stdlib.h>
+int main(void)
+{
+   char ch=90;				/* 將整數90設給字元變數ch */
+   printf("ch=%c\n",ch);		/* 印出ch的值 */
+   
+   system("pause");
+   return 0;
+}
+--------------
+3-6
+/* prog3_6, 字元型態的列印問題*/
+#include <stdio.h>
+#include <stdlib.h>
+int main(void)
+{
+   int i=356;
+   printf("ASCII(%d)=%c\n",i,i);	/* 印出ASCII碼為i的字元 */
+   
+   system("pause");
+   return 0;
+}
+A:d
+--------------
+3-10
+/* prog3_10, float與double精度的比較 */
+#include <stdio.h>
+#include <stdlib.h>
+int main(void)
+{
+   float  num1=123.456789012345F; /* 宣告num1為float，並設定初值 */
+   double num2=123.456789012345;  /* 宣告num2為double，並設定初值 */   
+   
+   printf("num1=%f16.12f\n",num1); /* 列印出浮點數num1的值 */
+   printf("num2=%f16.12f\n",num2); /* 列印出倍精度浮點數num2的值 */   
+   
+   system("pause");   
+   return 0;
+}
+A:num1=123.45678916.12f
+Num2=123.45678916.12f
+--------------
+3-11
+ /* prog3_11, 列印出各種資料型態的長度 */
+#include <stdio.h>
+#include <stdlib.h>
+int main(void)
+{
+   char ch;			/* 宣告字元變數ch */
+   float num;			/* 宣告浮點數變數num */	
+   
+   printf("sizeof(4L)=%d\n",sizeof(4L));	/* 查詢常數2L所佔位元組 */
+  
+   printf("sizeof(ch)=%d\n",sizeof(ch));	/* 查詢字元變數ch所佔位元組 */
+   printf("sizeof(num)=%d\n",sizeof(num));	/* 查詢變數num所佔位元組 */
+
+   printf("sizeof(int)=%d\n",sizeof(int));	/* 查詢int型態所佔位元組 */
+   printf("sizeof(long)=%d\n",sizeof(long));	/* 查詢long型態所佔位元組 */
+   printf("sizeof(short)=%d\n",sizeof(short));	/* 查詢short所佔位元組 */
+
+   system("pause");
+   return 0;
+}
+--------------
+3-13
+/* prog3_13, 資料型態的轉換*/
+#include <stdio.h>
+#include <stdlib.h>
+int main(void)
+{
+   int num=5;
+
+   printf("num/2=%f\n",num/2);			/* 整數相除 */   
+   printf("(float)num/2=%f\n",(float)num/2);	/* 將整數轉成浮點數，再做除法 */
+  
+   system("pause");
+   return 0;
+}
+A:num/2=0.000000
+--------------
+4-3
+/* prog4_3, 使用printf()函數 */
+#include <stdio.h>
+#include <stdlib.h>
+int main(void)
+{
+   printf("\"%dC:\\happyC\"\n",num);    /* 印出字串 */
+
+   system("pause");
+   return 0;
+}
+--------------
+
+--------------
+
+--------------
+
+--------------
+
+--------------
+
