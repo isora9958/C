@@ -52,3 +52,23 @@ Enter a character: A
 >>> ch = chr(ord(x) + 3)
 >>> print(ch)
 D
+
+
+
+>>> sum = 2 + 3
+>>> print(sum)
+5
+>>> s ='2' + '3'
+>>> print(s)
+23
+
+
+
+>>> title = "Chapter " + 1
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: must be str, not int
+>>> ChapterNO = 1
+>>> title = "Chapter"+str(ChapterNO)
+>>> title
+'Chapter1'
