@@ -31,3 +31,24 @@ print("The average of", number1, number2, number3, "is", average)
 >>> print(q, p, p * q, sep=",")
 >>> print(q, p, p * q, sep=" :-) ")
 >>> print(str(q) + " " + str(p) + " " + str(p * q))
+
+
+
+
+
+
+>>> x = input("Enter a character: ")
+Enter a character: A
+>>> y = input("Enter a character: ")
+Enter a character: Z
+>>> print(ord(y) - ord(x))
+25
+
+
+
+
+>>> x = input("Enter a character: ")
+Enter a character: A
+>>> ch = chr(ord(x) + 3)
+>>> print(ch)
+D
