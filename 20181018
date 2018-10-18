@@ -8,13 +8,260 @@ Welcome to Python
 Python is fun
 >>> print("Problem Driven")
 Problem Driven
+
+
 >>> print((10.5+2*3)/(45-3.5))
 0.39759036144578314
+
+
 >>> print("Fahrenheit 35 is Celsius degree")
 Fahrenheit 35 is Celsius degree
 >>> print(5/9*35-32)
 -12.555555555555554
+
+
 >>> print("3.5*4/2-2.5 is")
 3.5*4/2-2.5 is
 >>> print(3.5*4/2-2.5)
 4.5
+
+>>> import turtle
+
+>>> turtle.color("blue")
+>>> turtle.penup()
+>>> turtle.goto(-110,-25)
+>>> turtle.pendown()
+>>> turtle.circle(45)
+
+>>> turtle.color("black")
+>>> turtle.penup()
+>>> turtle.goto(0,-25)
+>>> turtle.pendown()
+>>> turtle.circle(45)
+
+>>> turtle.color("red")
+>>> turtle.penup()
+>>> turtle.goto(110,-25)
+>>> turtle.pendown()
+>>> turtle.circle(45)
+
+>>> turtle.color("yellow")
+>>> turtle.penup()
+>>> turtle.goto(-55,-75)
+>>> turtle.pendown()
+>>> turtle.circle(45)
+
+>>> turtle.color("green")
+>>> turtle.penup()
+>>> turtle.goto(55,-75)
+>>> turtle.pendown()
+>>> turtle.circle(45)
+
+>>> radius =20
+>>> area = radius * radius*3.14159
+>>> print("The area for the circle of radius",radius,"is",area)
+The area for the circle of radius 20 is 1256.636
+
+
+>>> width=5.5
+>>> height=2
+>>> print("area is",width*height)
+area is 11.0
+
+
+>>> radius = eval(input("Enter a value for radius: "))
+Enter a value for radius: 2.5
+>>> area=radius*radius*3.14159
+>>> print("The area for the circle of radius",radius,"is",area)
+The area for the circle of radius 2.5 is 19.6349375
+
+
+>>> radius = eval(input("Enter a value for radius: "))
+Enter a value for radius: 23
+>>> area=radius*radius*3.14159
+>>> print("The area for the circle of radius",radius,"is",area)
+The area for the circle of radius 23 is 1661.90111
+
+>>> radius = 1.0
+>>> area = radius * radius * 3.14159
+>>> print("The area is",area,"for radius",radius)
+The area is 3.14159 for radius 1.0
+>>> radius = 2.0
+>>> area = radius * radius * 3.14159
+>>> print("The area is",area,"for radius",radius)
+The area is 12.56636 for radius 2.0
+
+
+>>> # Prompt the user to enter three numbers
+... number1, number2, number3 = eval(input("Enter three number separated by commas: "))
+Enter three number separated by commas: 1, 2, 3
+>>> #compute average
+... average = (number1 + number2 + number3) / 3
+>>> # Display result
+... print("The average of", number1, number2, number3 , "is" , average)
+The average of 1 2 3 is 2.0
+
+
+>>> # Assign a radius
+... radius = 20
+>>> # radius is now 20
+... #Compute area
+... PI= 3.14159
+>>> area = radius * radius * PI
+>>> #Display results
+... print("The area for the circle of radius", radius, "is",area)
+The area for the circle of radius 20 is 1256.636
+
+
+>>> # Prompt the user for input
+... purchaseAmount = eval(input("Enter purchase amount: "))
+Enter purchase amount: 197.55
+>>> # Compute sales tax
+... tax = purchaseAmount * 0.06
+>>> # Display  tax amount whit two digits after decimal point
+... print("Sales tax is",int(tax*100)/100.0)
+Sales tax is 11.85
+
+
+>>> 42/5
+8.4
+>>> 42//5
+8
+>>> 42%5
+2
+>>> 4055
+4055
+>>> 1%2
+1
+>>> 2%1
+0
+>>> 45+4*4-2
+59
+>>> 45+43%5*(23*3%2)
+48
+>>> 5**2
+25
+>>> 5.1**2
+26.009999999999998
+
+
+>>> value = 4.6
+>>> print(int(value))
+4
+>>> print(round(value))
+5
+>>> print(eval("4*5+2"))
+22
+>>> print(int("04"))
+4
+>>> print(int("4.5"))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: invalid literal for int() with base 10: '4.5'
+>>> print(eval("04"))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "<string>", line 1
+    04
+     ^
+SyntaxError: invalid token
+
+
+>>> import time
+>>> currentTime = time.time() # Get current time
+>>> # Obtain the total seconds since midnight, Jan 1, 1970
+... totalSeconds = int(currentTime)
+>>> # Get the current second
+... currentSecond = totalSeconds % 60
+>>> # Obtain the total minutes
+... totalMinutes = totalSeconds // 60
+>>> # Compute the current minute in the hour
+... currentMinute = totalMinutes % 60
+>>> # Obtain the total hours
+... totalHours = totalMinutes // 60
+>>> # Compute the current hour
+... currentHour = totalHours % 24
+>>> # Display results
+... print("Current time is",currentHour, ":",currentMinute, ":", currentSecond, "GMT")
+Current time is 7 : 19 : 20 GMT
+
+
+>>> import turtle
+>>> turtle.color("pink")
+>>> turtle.penup
+<function penup at 0x7fde20904a60>
+>>> turtle.penup()
+>>> turtle.goto(0,0)
+>>> turtle.pendown()
+>>> turtle.forward(50)
+>>> turtle.right(90)
+>>> turtle.forward(50)
+>>> turtle.right(90)
+>>> turtle.forward(50)
+>>> turtle.right(90)
+>>> turtle.forward(50)
+
+>>> turtle.right(90)
+>>> turtle.circle(50,steps=3)
+>>> turtle.circle(-50,steps=3)
+
+
+>>> turtle.circle(50)
+>>> turtle.penup()
+>>> turtle.goto(100,0)
+>>> turtle.pendown()
+>>> turtle.circle(50)
+>>> turtle.penup()
+>>> turtle.goto(100,-100)
+>>> turtle.pendown()
+>>> turtle.circle(50)
+>>> turtle.penup()
+>>> turtle.goto(0,-100)
+>>> turtle.pendown()
+>>> turtle.circle(50)
+
+
+>>> import turtle
+>>> turtle.color("black")
+>>> turtle.forward(100)
+>>> turtle.right(90)
+>>> turtle.forward(200)
+>>> turtle.right(90)
+>>> turtle.forward(200)
+>>> turtle.right(90)
+>>> turtle.forward(200)
+>>> turtle.right(90)
+>>> turtle.forward(200)
+>>> turtle.right(90)
+>>> turtle.forward(100)
+>>> turtle.right(90)
+>>> turtle.forward(100)
+>>> turtle.right(90)
+>>> turtle.forward(100)
+>>> turtle.right(-90)
+>>> turtle.forward(100)
+>>> turtle.right(-90)
+>>> turtle.forward(100)
+>>> turtle.right(-90)
+>>> turtle.forward(100)
+>>> turtle.right(90)
+>>> turtle.forward(100)
+
+
+>>> turtle.color("black")
+>>> turtle.right(45)
+>>> turtle.forward(100)
+>>> turtle.right(45)
+>>> turtle.right(45)
+>>> turtle.forward(100)
+>>> turtle.right(45)
+>>> turtle.right(45)
+>>> turtle.forward(100)
+>>> turtle.right(45)
+>>> turtle.right(45)
+>>> turtle.forward(100)
+>>> turtle.right(45)
+>>> turtle.right(45)
+>>> turtle.forward(100)
+
+
