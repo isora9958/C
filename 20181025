@@ -1,0 +1,168 @@
+/* prog5_1, 設定運算子「=」 */
+#include <stdio.h>
+#include <stdlib.h>
+int main(void)
+{
+   int age=18; 
+   
+   printf("age=%d\n",age); 
+   age=age+2;  	/* 將age加2後，再設回給age存放 */
+   printf("將age加2之後,age=%d\n",age); 
+   
+   system("pause");
+   return 0;
+}
+
+age=18
+將age加2之後,age=20
+
+--
+
+/* prog5_2, 「!」運算的用法 */
+#include <stdio.h>
+#include <stdlib.h>
+int main(void)
+{
+   int a=0;
+   int b=7;
+   printf("a=%d, !a=%d\n",a,!a);	/* 印出a及!a的值 */
+   printf("b=%d, !b=%d\n",b,!b);	/* 印出b及!b的值 */
+   
+   system("pause");   
+   return 0;
+}
+
+a=0, !a=1
+b=7, !b=0
+
+--
+
+/* prog5_3, 餘數運算子的練習 */
+#include <stdio.h>
+#include <stdlib.h>
+int main(void)
+{   
+   printf("12%%4=%d\n",12%4);		/* 求出12/4的餘數 */
+   printf("12%%8=%d\n",12%8);   	/* 求出12/8的餘數 */
+   printf("12%%18=%d\n",12%18); 	/* 求出12/18的餘數 */
+
+   system("pause");
+   return 0;
+}
+
+
+12%4=0
+12%8=4
+12%18=12
+
+--
+
+/* prog5_3, 餘數運算子的練習 */
+#include <stdio.h>
+#include <stdlib.h>
+int main(void)
+{   
+   printf("12%%4=%d\n",12%4);		/* 求出12/4的餘數 */
+   printf("12%%8=%d\n",12%8);   	/* 求出12/8的餘數 */
+   printf("12%%18=%d\n",12%18); 	/* 求出12/18的餘數 */
+
+   system("pause");
+   return 0;
+}
+
+7>2成立
+此行一定會被執行
+
+--
+
+/* prog5_5, 遞增運算子「++」 */
+#include <stdio.h>
+#include <stdlib.h>
+int main(void)
+{
+   int a=4, b=4;
+   
+   printf("a=%d",a);
+   printf(", a++的傳回值為%d",a++);	/* 計算a++，並印出其傳回值 */
+   printf(", a=%d\n",a);
+   
+   printf("b=%d",b);
+   printf(", ++b的傳回值為%d",++b); 	/* 計算++b，並印出其傳回值 */
+   printf(", b=%d\n",b);
+     
+   system("pause");   
+   return 0;
+}
+
+a=4, a++的傳回值為4, a=5
+b=4, ++b的傳回值為5, b=5
+
+--
+
+/* prog5_6, 邏輯運算子的應用 */
+#include <stdio.h>
+#include <stdlib.h>
+int main(void)
+{
+   int score;
+   printf("請輸入成績:");
+   scanf("%d",&score);
+   
+   if ((score<0) || (score>100))   /* 若成績超出0到100之間 */
+      printf("成績輸入錯誤!!\n");     
+   
+   if ((score<60) && (score>49))   /* 若成績介於50到59之間 */
+      printf("需要補考!!\n");   
+
+   system("pause");   
+   return 0;
+}
+
+請輸入成績:55
+需要補考!!
+
+--
+
+/* prog5_7, 簡潔運算式 */
+#include <stdio.h>
+#include <stdlib.h>
+int main(void)
+{
+   int a=5,b=6;
+   printf("計算前: a=%d, b=%d\n",a,b);
+   a+=b;		/* 計算a+=b, 即a=a+b */
+   printf("計算後: a=%d, b=%d\n",a,b);
+      
+   system("pause");   
+   return 0;
+}
+
+計算前: a=5, b=6
+計算後: a=11, b=6
+
+--
+
+/* prog5_8, 運算式的型態轉換 */
+#include <stdio.h>
+#include <stdlib.h>
+int main(void)
+{
+   char ch='a';
+   short s=-3;
+   int i=4;
+   float f=5.1f;
+   double d=6.87;    
+   printf("(ch/s)-(d/f)-(s+i)=%f\n",(ch/s)-(d/f)-(s+i));  
+   printf("size=%d\n",sizeof((ch/s)-(d/f)-(s+i)));
+
+   system("pause");   
+   return 0;
+}
+
+(ch/s)-(d/f)-(s+i)=-34.347059
+size=8
+
+
+
+
+
