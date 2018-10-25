@@ -163,6 +163,378 @@ int main(void)
 size=8
 
 
+-----------------------------------------------------------------
+/* prog6_1, 選擇性結構if敘述 */
+#include <stdio.h>
+#include <stdlib.h>
+int main(void)
+{
+   int num;
+   printf("請輸入一個整數:");
+   scanf("%d",&num);
+   
+   if(num>0)    /* if敘述，用來判別num是否大於0 */
+      printf("您鍵入的整數大於0\n");
+      
+   printf("程式結束\n"); 
+
+   system("pause");
+   return 0;
+}
+
+請輸入一個整數:50
+您鍵入的整數大於0
+程式結束
+
+--
+
+/* prog6_2, 使用兩個if敘述來判斷數字 */
+#include <stdio.h>
+#include <stdlib.h>
+int main(void)
+{
+   int num;
+   
+   printf("請輸入一個整數:");
+   scanf("%d",&num);
+   
+   if(num>0) 		/* if敘述，用來判別num是否大於0 */
+      printf("您鍵入的整數大於0\n");
+      
+   if(num<=0)		/* if敘述，用來判別num是否小於等於0 */
+      printf("您鍵入的整數小於或等於0\n");      
+      
+   printf("程式結束\n"); 
+
+   system("pause");
+   return 0;
+}
+
+請輸入一個整數:50
+您鍵入的整數大於0
+程式結束
+
+--
+
+/* prog6_3, 選擇性結構if-else敘述 */
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void)
+{
+   int num;
+   printf("請輸入一個整數:");
+   scanf("%d",&num);
+   
+   if(num>0)		/* 判別num是否大於0 */
+      printf("您鍵入的整數大於0\n");
+   else   		/* 如果num不是大於0，則執行下面的敘述 */
+      printf("您鍵入的整數小於或等於0\n");      
+      
+   printf("程式結束\n"); 
+
+   system("pause");
+   return 0;
+}
+
+請輸入一個整數:-1
+您鍵入的整數小於或等於0
+程式結束
+
+--
+
+/* prog6_4,if-else敘述的練習 */
+#include <stdio.h>
+#include <stdlib.h>
+int main(void)
+{
+   int num;
+   printf("請輸入一個整數:");	/* 輸入整數num */
+   scanf("%d",&num);
+   
+   if (num%2!=0)		/* 如果num不能被2整除 */ 
+   {  
+      printf("%d不能被2整除, ",num);
+      printf("所以%d是奇數\n",num);		/* 印出num為奇數 */
+   }
+   else
+   {
+      printf("%d可以被2整除, ",num);
+      printf("所以%d是偶數\n",num);		/* 印出num為偶數 */
+   }
+ 
+   system("pause");
+   return 0;
+}
+
+請輸入一個整數:-5
+-5不能被2整除, 所以-5是奇數
+
+--
+
+/* prog6_5, 巢狀if敘述的練習 */
+#include <stdio.h>
+#include <stdlib.h>
+int main(void)
+{
+   int score;
+   printf("請輸入成績:");		
+   scanf("%d",&score);
+   
+   if (score<60) 		/* 如果score<60 */
+   {  
+      if(score>=50)		/* 如果score>=50 */
+         printf("請參加補考\n");
+      else 
+         printf("必須重修\n"); 
+   }
+   else
+      printf("本科及格\n");	
+ 
+   system("pause");
+   return 0;
+}
+
+請輸入成績:80
+本科及格
+
+--
+
+/* prog6_6, if-else-if敘述的應用 */
+#include <stdio.h>
+#include <stdlib.h>
+int main(void)
+{
+   int score;
+   printf("Your score:"); 
+   scanf("%d",&score);
+
+   if (score>=80)
+      printf("%d is A\n",score);			/* 印出A */
+   else if (score>=70)
+            printf("%d is B\n",score);		/* 印出B */
+         else if (score>=60)
+                  printf("%d is C\n",score);	/* 印出C */
+               else
+                  printf("Failed!!\n");	/* 印出字串"Failed!!" */
+
+   system("pause");
+   return 0;
+}
+
+Your score:80
+80 is A
+
+--
+
+/* prog6_7, if-else配對問題(一) */
+#include <stdio.h>
+#include <stdlib.h>
+int main(void)
+{
+   int num;
+   printf("請輸入一個整數:");	
+   scanf("%d",&num);
+   
+   if (num>=0)
+      if(num<=10)
+         printf("數字介於0到10之間\n");
+      else 
+         printf("數字大於10\n"); 
+ 
+   system("pause");
+   return 0;
+}
+
+請輸入一個整數:50
+數字大於10
+
+--
+
+/* prog6_8, if-else配對問題(二) */
+#include <stdio.h>
+#include <stdlib.h>
+int main(void)
+{
+   int num;
+   printf("請輸入一個整數:");	
+   scanf("%d",&num);
+   
+   if (num>=0)
+   {
+      if(num<=10)
+         printf("數字介於0到10之間\n");
+   }
+   else     /* 如果第10行的if敘述不成立 */
+      printf("數字小於0\n");          
+ 
+   system("pause");
+   return 0;
+}
+
+請輸入一個整數:9
+數字介於0到10之間
+
+--
+
+#include <stdio.h>
+#include <stdlib.h>
+int main(void)
+{
+   int num1,num2,smaller;
+   printf("請輸入兩個整數:");
+   scanf("%d %d",&num1,&num2);
+   
+   num1>num2 ? (smaller=num1) : (smaller=num2);  /* 條件運算子 */
+   printf("%d數值較大\n",smaller); 
+ 
+   system("pause");
+   return 0;
+}
+
+
+請輸入兩個整數:50,10
+50數值較大
+
+--
+
+/* prog6_10, switch敘述的使用範例 */
+#include <stdio.h>
+#include <stdlib.h>
+int main(void)
+{
+   int a,b;
+   char oper;
+   printf("請輸入運算式(例如:3+2): ");   		/* 輸入運算式 */
+   scanf("%d %c %d",&a,&oper,&b);
+
+   switch(oper)
+   {
+      case '+':
+         printf("%d+%d=%d\n",a,b,a+b);		/* 印出a+b */
+         break;
+      case '-':
+         printf("%d-%d=%d\n",a,b,a-b);		/* 印出a-b */
+         break;
+      case '*':
+         printf("%d*%d=%d\n",a,b,a*b);		/* 印出a*b */
+         break;
+      case '/':
+         printf("%d/%d=%.3f\n",a,b,(float)a/b); /* 印出a%b */
+         break;
+      default:
+         printf("無法辨認的運算式!!\n");		/* 印出字串 */
+   }
+   system("pause");
+   return 0;
+}
+
+請輸入運算式(例如:3+2): 5+8
+5+8=13
+
+--
+
+/* prog6_11, switch敘述-以不同的選擇值來處理相同的敘述 */
+#include <stdio.h>
+#include <stdlib.h>
+int main(void)
+{
+   char grade;
+   printf("Input grade:");
+   scanf("%c",&grade);
+
+   switch(grade)
+   {
+      case 'a':	/* 輸入a或A時印出Excellent! */
+      case 'A':
+         printf("Excellent!\n");
+         break;
+      case 'b':	/* 輸入b或B時印出Good! */
+      case 'B':
+         printf("Good!\n");
+         break;
+      case 'c':	/* 輸入c或C時印出Be study hard! */
+      case 'C':
+         printf("Be study hard!\n");
+         break;
+      default:	/* 輸入其他字元時印出Failed! */
+         printf("Failed!\n");
+   }
+   system("pause");
+   return 0;
+}
+
+Input grade:a
+Excellent!
+
+--
+
+/* prog6_13, 使用goto敘述 */
+#include <stdio.h>
+#include <stdlib.h>
+int main(void)
+{
+   int i=0,sum=0;
+   start:			/* start 標籤 */
+      i++;
+      sum+=i;
+      printf("%d",i);		
+      if (i<10)
+      {
+         printf("+");	/* 印出+，並回到start標籤內的敘述 */
+         goto start;
+      }
+      printf("=%d\n",sum);/* 印出sum的值 */
+   system("pause");
+   return 0;
+}
+
+1+2+3+4+5+6+7+8+9+10=55
+
+--
+
+/* prog6_12, 忘了加上break的switch敘述 */
+#include <stdio.h>
+#include <stdlib.h>
+int main(void)
+{
+   char grade;
+   printf("Input grade:");
+   scanf("%c",&grade);
+
+   switch(grade)
+   {
+      case 'a':	/* 輸入a或A時印出Excellent! */
+      case 'A':
+         printf("Excellent!\n");
+      case 'b':	/* 輸入b或B時印出Good! */
+      case 'B':
+         printf("Good!\n");
+      case 'c':	/* 輸入c或C時印出Be study hard! */
+      case 'C':
+         printf("Be study hard!\n");
+      default:	/* 輸入其他字元時印出Failed! */
+         printf("Failed!\n");
+   }
+   system("pause");
+   return 0;
+}
+
+Input grade:B
+Good!
+Be study hard!
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
