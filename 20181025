@@ -578,25 +578,18 @@ int main(void)
 #include <stdlib.h>
 int main(void)
 {
-   int i=1,sum=0;	/* 設定迴圈初值 */
-   do
-   {
-      sum+=i ;
-      i++ ;
-   }
-   while (i<=10);		/* 當n<=0時重複輸入n的值 */
-
-   do
-      sum+=i++;		/* 計算sum=sum+i之後，i的值再加1 */
-   while (i<=10);	/* 當i<=n時執行累加的動作 */
-   printf("1+2+...+%d=%d\n",sum);
-
+   int i,sum=0;
+   
+   for(i=1;i<=10;i++)			
+      sum+=i; /* sum=sum+1 */
+      
+   printf("1+2+3+...+10=%d\n",sum);	
+   
    system("pause");
    return 0;
 }
 
-1+2+...+12=11419984
-
+1+2+3+...+10=55
 --
 
 
