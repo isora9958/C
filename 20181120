@@ -1,0 +1,344 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>流程控制範例</title>
+    <script language="javascript">
+  var X = prompt("請輸入1-5的數字", "");
+  switch(X)
+  {
+    case "1":    	//當使用者輸入1時
+      alert("ONE");
+      break;
+    case "2":    	//當使用者輸入2時
+      alert("TWO");
+      break;
+    case "3":    	//當使用者輸入3時
+      alert("THREE");
+      break;
+    case "4":    	//當使用者輸入4時
+      alert("FOUR");
+      break;
+    case "5":    	//當使用者輸入5時
+      alert("FIVE");
+      break;
+    default:    	//當使用者輸入1-5以外的數字時
+      alert("您輸入的數字超過範圍！");
+      break;
+  }
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
+
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>流程控制範例</title>
+    <script language="javascript">
+  var X = prompt("請輸入1-5的數字", "");
+  switch(X)
+  {
+    case "1":    	//當使用者輸入1時
+      alert("ONE");
+      //break;
+    case "2":    	//當使用者輸入2時
+      alert("TWO");
+      //break;
+    case "3":    	//當使用者輸入3時
+      alert("THREE");
+      //break;
+    case "4":    	//當使用者輸入4時
+      alert("FOUR");
+      //break;
+    case "5":    	//當使用者輸入5時
+      alert("FIVE");
+      //break;
+    default:    	//當使用者輸入1-5以外的數字時
+      alert("您輸入的數字超過範圍！");
+      //break;
+  }
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>流程控制範例</title>
+    <script language="javascript">
+  var X = prompt("請輸入正整數", "");
+  var Total = 0;
+  for (var i = 1; i <= X; i++)
+  {
+    Total = Total + i;			//這行敘述也可以改寫為Total += i;
+  }
+  alert(Total);
+
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>流程控制範例</title>
+    <script language="javascript">
+  do
+  {
+    Number = prompt("請輸入1-10的數字", "");
+    if (Number > 6)        	//太大了繼續做答
+    {
+      alert("太大了！請重新輸入！");
+    }
+    else if (Number < 6)  		//太小了繼續做答
+    {
+      alert("太小了！請重新輸入！");
+    }
+  }while(Number != 6)
+  alert("答對了！");
+  </script>
+  </head>
+  <body>
+  </body>
+</html>
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>函式範例</title>
+    <script language="javascript">
+      function Greeting()		//宣告函式
+      {
+        var UserName = prompt("請輸入您的大名", "");
+        alert(UserName + "您好！歡迎光臨！");
+      }
+      Greeting();				//呼叫函式
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>函式範例</title>
+    <script language="javascript">
+      function Greeting()		//宣告函式
+      {
+        var UserName = prompt("請輸入您的大名", "");
+        alert(UserName + "您好！歡迎光臨！");
+      }      
+    </script>
+  </head>
+  <body>
+    <h1><a href="javascript:Greeting()">點取此處以顯示歡迎訊息</a></h1>
+  </body>
+</html>
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>函式範例</title>
+    <script language="javascript">
+      function Convert2F(DegreeC)	//宣告名稱為Convert2F、參數為DegreeC的函式
+      {
+        var DegreeF = DegreeC * 1.8 + 32;
+        alert("攝氏" + DegreeC + "度可以轉換為華氏" + DegreeF + "度");
+      }
+      var Temperature = prompt("請輸入攝氏溫度", "");
+      Convert2F(Temperature);		//呼叫函式時要將輸入的攝氏溫度當成參數傳入
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>函式範例</title>
+    <script language="javascript">
+      function Convert2F(DegreeC)	//宣告名稱為Convert2F、參數為DegreeC的函式
+      {
+        var DegreeF = DegreeC * 1.8 + 32;
+        alert("攝氏" + DegreeC + "度可以轉換為華氏" + DegreeF + "度");
+      }
+      var Temperature = prompt("請輸入攝氏溫度", "");
+      Convert2F(Temperature);		//呼叫函式時要將輸入的攝氏溫度當成參數傳入
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>範例</title>
+  </head>
+  <body>
+    <table border="1">
+    <script language="javascript">
+      var DrinkNames = new Array("卡布奇諾咖啡", "拿鐵咖啡", "血腥瑪莉", 
+        "長島冰茶", "愛爾蘭咖啡", "藍色夏威夷", "英式水果冰茶");
+      for(var i = 0; i < DrinkNames.length; i++)
+      {
+        document.write("<tr><td>飲料" + (i+1) + "</td>");
+        document.write("<td>" + DrinkNames[i] + "</td></tr>");
+      } 
+    </script>
+    </table>
+  </body>
+</html>
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>範例</title>
+  </head>
+  <body>
+    <table border="1">
+    <script language="javascript">
+      var Students = new Array(5);
+      for(var i = 0; i < Students.length; i++)
+        Students[i] = new Array(2);				//宣告Array物件的元素為另一個Array物件
+      Students[0][0] = "小丸子";				//一一指派二維陣列的值
+      Students[1][0] = "花輪";
+      Students[2][0] = "小玉";
+      Students[3][0] = "美環";
+      Students[4][0] = "丸尾";
+      Students[0][1] = 80;
+      Students[1][1] = 95;
+      Students[2][1] = 92;
+      Students[3][1] = 88;
+      Students[4][1] = 85;
+      for(var i = 0; i < Students.length; i++)	//使用巢狀迴圈顯示二維陣列的值
+      {
+        document.write("<tr>");
+        for(var j = 0; j < Students[i].length; j++)
+          document.write("<td>" + Students[i][j] + "</td>");
+        document.write("</tr>");
+      }
+    </script>
+    </table>
+  </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>最簡單表單的HTML結構</title>
+ </head>
+ <body>
+	<form method="post" action="">
+		帳戶：<input type="text" name="" /><br /><br />
+		密碼：<input type="password" name="" /><br /><br />
+		確認：<input type="password" name="" /><br /><br />
+		<input type="submit" value="註冊"/>
+	</form>
+ </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>最簡單表單的HTML結構</title>
+ </head>
+ <body>
+	<form method="post" action="">
+		帳戶：<input type="text" name="" id="userid" /><br /><br />
+		密碼：<input type="password" name="" id="userpwd" /><br /><br />
+		確認：<input type="password" name="" id="userpwd2" /><br /><br />
+		<input type="submit" value="註冊" onclick="return eg.regCheck();" />
+	</form>
+	<script>
+	var eg = {};//聲明一個物件，當做命名空間來使用，本書預設的範例都會以此來管理
+		eg.regCheck = function(){
+..................................
+		}
+	</script>
+ </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>最簡單表單的HTML結構</title>
+ </head>
+ <body>
+	<form method="post" action="">
+		帳戶：<input type="text" name="" id="userid" /><br /><br />
+		密碼：<input type="password" name="" id="userpwd" /><br /><br />
+		確認：<input type="password" name="" id="userpwd2" /><br /><br />
+		<input type="submit" value="註冊" onclick="return eg.regCheck();" />
+	</form>
+	<script>
+		var eg = {};//聲明一個物件，當做命名空間來使用，本書預設的範例都會以此來方便管理
+			//定義一個公共函數來獲取指定id元素的值，減少代碼量，提高代碼複用率
+			eg.$ = function(id){
+				return document.getElementById(id);
+			};
+			eg.regCheck = function(){
+				var uid = eg.$("userid");
+				var upwd = eg.$("userpwd");
+				var upwd2 = eg.$("userpwd2");
+				if(uid.value == ''){
+					alert('帳戶不能為空!');
+					return false;
+				}
+				if(upwd.value == ''){
+					alert('密碼不能為空!');
+					return false;
+				}
+				if(upwd.value != upwd2.value){
+					alert('兩次密碼輸入不相同!');
+					return false;
+				}
+				return true;
+			};
+	</script>
+ </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>簡單固定列寬瀑布流</title>
+  <link rel="stylesheet" href="eg5.css" />
+ </head>
+ <body>
+	<div class="main">
+		<div class="col"><img src="1.jpg" alt="" /><p>[1.jpg]</p></div>
+		<div class="col"><img src="2.jpg" alt="" /><p>[2.jpg]</p></div>
+		<div class="col"><img src="3.jpg" alt="" /><p>[3.jpg]</p></div>
+		<div class="col"><img src="4.jpg" alt="" /><p>[4.jpg]</p></div>
+	</div>
+	<script src="base.js"></script>
+	<script src="eg5.js"></script>
+	<script>
+	eg.getColMin();//計算第一批資料的高度
+var dl = eg.getDataList(5,35);//初始化一些資料
+	eg.add(dl);//補充剩下的資料
+	eg.scroll();//啟動捲軸監聽
+	</script>
+ </body>
+</html>
+
+
