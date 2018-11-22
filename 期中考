@@ -1,1 +1,323 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(viod)
+{
+	int i=1,total=0;
+	for(i=1;i<=401;i+=4)
+  {
+  total+=1
+  }
+printf(“總和:%d\n”,total);
+getchar();
+}
+---
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(viod)
+{
+	int i=1,total=0;
+while(i<=401)
+  {
+  total+=i;
+  i+=4;
+  }
+printf(“總和:%d\n”,total);
+getchar();
+}
+---
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(viod)
+{
+	int i=1,total=0;
+	do{
+		total+=1;
+		i+=4;
+		}while(i<=401);
+		printf(“總和:%d\n”,total);
+		grtchar();
+}
+---
+
+#include <stdio.h>
+#include <stdlib.h>
+
+double power_for(double, int);
+double power_while(double, int);
+double power_dowhile(double, int);
+double power_r(double, int);
+
+int main(viod)
+{
+	double x;
+	int n;
+
+printf(“輸入底數:”);
+scanf(“%lf,%d”,&x,&n);
+
+printf(“輸入次方:”);
+	printf(“%lf的%dΩ 次方是%lf\n”,x,npower_for(x,n));
+
+system(“pause”);
+return 0;
+}
+double power_for(double base, int n)
+{
+	int i;
+	double pow=1.0;
+	for (i=1;i<=n;i++)
+		pow=pow*base;
+return pow;
+}
+---
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(viod)
+{
+	double x;
+	int n;
+
+printf(“輸入底數:”);
+scanf(“%lf,%d”,&x,&n);
+
+printf(“輸入次方:”);
+	printf(“%lf的%dΩ 次方是%lf\n”,x,npower_for(x,n));
+
+system(“pause”);
+return 0;
+}
+double power_whlie(double b,int a)
+{
+int i=1
+double total=1.0;
+	while(i<=a)
+		{
+		total*=b;
+		i++;
+		}
+return total;
+}
+---
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(viod)
+{
+	double x;
+	int n;
+
+printf(“輸入底數:”);
+scanf(“%lf,%d”,&x,&n);
+
+printf(“輸入次方:”);
+	printf(“%lf的%dΩ 次方是%lf\n”,x,npower_for(x,n));
+
+system(“pause”);
+return 0;
+}
+
+double power_dowhile(double b,int a)
+{
+	int i=1
+double total=1;
+	do{
+		total*=b;
+		i++;
+}while(i<=a);
+return total;
+}
+---
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(viod)
+{
+	double x;
+	int n;
+
+printf(“輸入底數:”);
+scanf(“%lf,%d”,&x,&n);
+
+printf(“輸入次方:”);
+	printf(“%lf的%dΩ 次方是%lf\n”,x,npower_for(x,n));
+
+system(“pause”);
+return 0;
+}
+
+double power_recursion(double b,int a)
+{
+	if (a==8)return 1;
+	return power_recursion(b,a-1)*b;
+}
+---
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(viod)
+{
+int i=1, sum=1;
+	for(i=1; i<=5; i++)
+sum*=i;
+printf(“5*4*3*2*1=%d\n”,sum);
+return 0;
+}
+---
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(viod)
+{
+int i=1, sum=1;
+	while(i<=4)
+{
+	i++;
+	sum*=i;
+}
+printf(“5*4*3*2*1=%d)n”,sum);
+return 0;
+}
+---
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(viod)
+{
+int i=1, sum=1;
+do
+{
+i++;
+sum*=I;
+}
+while(i<=4)
+printf(“5*4*3*2*1=%d\n”,sum);
+return 0;
+}
+---
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int fac_for(int x)
+{
+int total=1;
+	for(int i=1;i<=x;i++)
+		{
+		total*=i;
+		}
+return total;
+}
+///////////
+int fac_while(int x)
+{
+int i=1,total=1;
+	while(i<=x)
+		{
+		total*=i++;
+		}
+return total;
+}
+//////////
+int fac_dowhile(int x)
+{
+int i=1,total=1;
+	do{
+		total*=i++;
+		}while(i<=x);
+return total;
+}
+/////////
+int fac_recursion(int x)
+{
+	if (x==1) return 1;
+	return fac_recursion(x-1)*x;
+}
+////
+int main(void)
+{
+	int i;
+	printf(“輸入數字:”);
+	scanf(“%d,&i);
+
+	printf(“fac_for				的%d階層=%d\n,i,,fac_for(i));
+	printf(“fac_while			的%d階層=%d\n,i,,fac_while(i));
+	printf(“fac_dowhile			的%d階層=%d\n,i,,fac_dowhile(i));
+	printf(“fac_recursion		的%d階層=%d\n,i,,fac_recursion(i));
+system(“pause”);
+return 0;
+}
+---
+
+#include <stdio.h>
+#include <stdlib.h>
+int fib_for(int x)
+{
+	int y=1,z=1,n=0;
+	if (x==1||X==2)return 1;
+	for(int i=3;i<=x;i++)
+		{
+		n=y+z;
+		z=y;
+		y=n;
+		}
+return n;
+}
+////
+int fib_while(int x)
+{
+int i=3,y=1,z=1,n=0;
+if (x==1||x==2)return 1;
+	while(i<=x)
+		{
+		n=y+z;
+		z=y;
+		y=n;
+		i++;
+		}
+return n;
+}
+////
+int fib_dowhile(int x)
+{
+int i=3,y=1,z=1,n=0;
+if (x==1||x==2)return 1;
+	do{
+		n=y+z;
+		z=y;
+		y=n;
+		i++;
+		}while(i<=x);
+return n;
+}
+////
+int fib_recursion(int x)
+{
+	if (x==1||x==2) return 1;
+	return fib_recursion(x-1)+fib_recursion(x-2);
+}
+////
+int main()
+{
+	int x;
+	printf(“輸入數字”);
+scanf(“%d”&x);
+printf(“fib_for				第%d項是%d \n”,x,fib_for(x));
+printf(“fib_while			第%d項是%d \n”,x,fib_while(x));
+printf(“fib_dowhile			第%d項是%d \n”,x,fib_dowhile(x));
+printf(“fib_recursion		第%d項是%d \n”,x,fib_recursion(x));
+system(“pause”);
+return 0;
+}
 
