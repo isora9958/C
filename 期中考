@@ -40,7 +40,7 @@ int main(viod)
 			i+=4;
 		}while(i<=401);
 	printf(“總和:%d\n”,total);
-	grtchar();
+	getchar();
 }
 ---
 
@@ -61,7 +61,7 @@ printf(“輸入底數:”);
 scanf(“%lf,%d”,&x,&n);
 
 printf(“輸入次方:”);
-	printf(“%lf的%dΩ 次方是%lf\n”,x,npower_for(x,n));
+	printf(“%lf的%dΩ 次方是%lf\n”,x,n,power_for(x,n));
 
 system(“pause”);
 return 0;
@@ -88,7 +88,7 @@ printf(“輸入底數:”);
 scanf(“%lf,%d”,&x,&n);
 
 printf(“輸入次方:”);
-	printf(“%lf的%dΩ 次方是%lf\n”,x,npower_for(x,n));
+	printf(“%lf的%dΩ 次方是%lf\n”,x,n,power_while(x,n));
 
 system(“pause”);
 return 0;
@@ -118,7 +118,7 @@ printf(“輸入底數:”);
 scanf(“%lf,%d”,&x,&n);
 
 printf(“輸入次方:”);
-	printf(“%lf的%dΩ 次方是%lf\n”,x,npower_for(x,n));
+	printf(“%lf的%dΩ 次方是%lf\n”,x,n,power_dowhile(x,n));
 
 system(“pause”);
 return 0;
@@ -148,7 +148,7 @@ printf(“輸入底數:”);
 scanf(“%lf,%d”,&x,&n);
 
 printf(“輸入次方:”);
-	printf(“%lf的%dΩ 次方是%lf\n”,x,npower_for(x,n));
+	printf(“%lf的%dΩ 次方是%lf\n”,x,n,power_r(x,n));
 
 system(“pause”);
 return 0;
@@ -199,7 +199,7 @@ int i=1, sum=1;
 do
 	{
 	i++;
-	sum*=I;
+	sum*=i;
 	}
 while(i<=4)
 printf(“5*4*3*2*1=%d\n”,sum);
@@ -251,10 +251,10 @@ int main(void)
 	printf(“輸入數字:”);
 	scanf(“%d,&i);
 
-	printf(“fac_for				的%d階層=%d\n,i,,fac_for(i));
-	printf(“fac_while			的%d階層=%d\n,i,,fac_while(i));
-	printf(“fac_dowhile			的%d階層=%d\n,i,,fac_dowhile(i));
-	printf(“fac_recursion		的%d階層=%d\n,i,,fac_recursion(i));
+	printf(“fac_for				的%d階層=%d\n,i,fac_for(i));
+	printf(“fac_while			的%d階層=%d\n,i,fac_while(i));
+	printf(“fac_dowhile			的%d階層=%d\n,i,fac_dowhile(i));
+	printf(“fac_recursion			的%d階層=%d\n,i,fac_recursion(i));
 system(“pause”);
 return 0;
 }
@@ -316,7 +316,7 @@ scanf(“%d”&x);
 printf(“fib_for				第%d項是%d \n”,x,fib_for(x));
 printf(“fib_while			第%d項是%d \n”,x,fib_while(x));
 printf(“fib_dowhile			第%d項是%d \n”,x,fib_dowhile(x));
-printf(“fib_recursion		第%d項是%d \n”,x,fib_recursion(x));
+printf(“fib_recursion			第%d項是%d \n”,x,fib_recursion(x));
 system(“pause”);
 return 0;
 }
